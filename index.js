@@ -1,39 +1,39 @@
 "use strict"
-//  Engineer = "cliff"; // ReferenceError: Engineer is not defined
-// console.log(papa);
+ Engineer = "cliff"; // ReferenceError: Engineer is not defined
+console.log(Engineer);
 
 
-// const wecode = [Nelly, Max, James, cliff]; //reference error: names not defined
+const wecode = [Nelly, Max, James, cliff]; //reference error: names not defined
 
-// console.log(wecode; // syntax error: missing closing bracket 
-
-
-// const name = "JohnBrian";
-// name = "Hope"; //Type Error: Assignment to a constant variable 
-// console.log(name);
+console.log(wecode; // syntax error: missing closing bracket 
 
 
-//try...catch syntax 
-// const makeError = () => {
-//   try{
-//     const name = "JohnBrian";
-//     name = "Hope";
-//   }catch(e){
-// console.error(e); 
-//   } finally {
-//     console.log("....Successfully Submitted"); //executed irregardless of an error or not
-//   }
-// }
-// makeError();
+const name = "JohnBrian";
+name = "Hope"; //Type Error: Assignment to a constant variable 
+console.log(name);
 
-              //Asynchronous
-// setTimeout(function() {
-//     try {
-//       wecode; // Error is not defined
-//     } catch(err) {
-//       console.error(err);
-//     }
-//   }, 1000);
+
+try...catch syntax 
+const makeError = () => {
+  try{
+    const name = "JohnBrian";
+    name = "Hope";
+  }catch(e){
+console.error(e); 
+  } finally {
+    console.log("....Successfully Submitted"); //executed irregardless of an error or not
+  }
+}
+makeError();
+
+              Asynchronous
+setTimeout(function() {
+    try {
+      wecode; // Error is not defined
+    } catch(err) {
+      console.error(err);
+    }
+  }, 1000);
 
 
   function divide(x, y) {
