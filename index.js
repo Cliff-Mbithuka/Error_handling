@@ -13,7 +13,7 @@ name = "Hope"; //Type Error: Assignment to a constant variable
 console.log(name);
 
 
-try...catch syntax 
+// try...catch syntax 
 const makeError = () => {
   try{
     const name = "JohnBrian";
@@ -26,7 +26,7 @@ console.error(e);
 }
 makeError();
 
-              Asynchronous
+            //   Asynchronous
 setTimeout(function() {
     try {
       wecode; // Error is not defined
