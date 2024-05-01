@@ -49,3 +49,27 @@ try {
 } catch (error) {
     console.error("An error occurred:", `${error}`);
 }
+
+
+//rethrowing 
+function processUserData(userData) {
+    try {
+        validateUserData(userData);
+    } catch (error) {
+        // Add context or information to the error message
+        throw new Error(`Error processing user data: ${error.message}`);
+    }
+}
+
+function validateUserData(userData) {
+    if (!userData.name) {
+        throw new Error("Name is required");
+    }
+}
+
+try {
+    const userData = { age: 25 };
+    processUserData(userData);
+} catch (error) {
+    console.error("An error occurred:", error.message);
+}
